@@ -1,0 +1,11 @@
+<div class="bounding-box" #boundingBox>
+    <corner-handle position="top-left"></corner-handle>
+    <corner-handle position="top-right"></corner-handle>
+    <corner-handle position="bottom-left"></corner-handle>
+    <corner-handle  position="bottom-right"></corner-handle>
+    <div class="rotation-handle-container">
+        <div class="rotation-handle"></div>
+    </div>
+</div>
+
+<floating-object-controls #floatingControls [class.visible]="!(objectControls.objectIsBeingTransformed$ | async)"></floating-object-controls>
